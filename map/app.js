@@ -76,7 +76,7 @@
 // const bornYears = ages.map(bornYear);
 // console.log(bornYears);
 
-//Стринг бүрийн эхний nүсгийг том болго.
+// Стринг бүрийн эхний nүсгийг том болго.
 // const arr = ["hello", "my", "name", "is", "danny"];
 
 // function capitalizeFirstLetter(str) {
@@ -85,7 +85,7 @@
 // const capitalLetters = arr.map(capitalizeFirstLetter);
 // console.log(capitalLetters);
 
-//Стринг массивыг тэдгээрийн уртын массив болгон хувирга.
+// Стринг массивыг тэдгээрийн уртын массив болгон хувирга.
 // const stringArray = ["apple", "banana"];
 // const newArr = [];
 // stringArray.forEach(str => {
@@ -102,7 +102,7 @@
 // const newPrice = price.map(incrPrice);
 // console.log(newPrice);
 
-//Тоонуудыг “₮1,200” гэх мэт форматтай мөнгөн дүнгийн стринг болго.
+// Тоонуудыг “₮1,200” гэх мэт форматтай мөнгөн дүнгийн стринг болго.
 // const price = [100, 200, 300];
 // function turnIntoStr(s) {
 //   return "$" + s;
@@ -123,7 +123,7 @@
 // const newBools = bools.map(turnIntoStr);
 // console.log(newBools);
 
-//Массив дотрох тоонуудыг 1-ээр нэмэгдүүлээд шинэ массив буцаа/хэвлэ
+// Массив дотрох тоонуудыг 1-ээр нэмэгдүүлээд шинэ массив буцаа/хэвлэ
 // const nums = [1, 2, 3, 4, 5, 6];
 // function incr(s) {
 //   return s + 1;
@@ -131,7 +131,7 @@
 // const newNums = nums.map(incr);
 // console.log(newNums);
 
-//Массивын бүх элементийг хэвлэх [1,2,3] → 1 2 3 гэж console.log хийх
+// Массивын бүх элементийг хэвлэх [1,2,3] → 1 2 3 гэж console.log хийх
 // const nums = [1, 2, 3, 4, 5, 6];
 
 // nums.forEach(str =>{
@@ -155,7 +155,7 @@
 
 // console.log(newNums);
 
-//Нэр бүрийн ард “-student” нэмээд хэвлэх ["Bold", "Suren"] → Bold-student, Suren-student
+// Нэр бүрийн ард “-student” нэмээд хэвлэх ["Bold", "Suren"] → Bold-student, Suren-student
 // const names = ["bold", "suren"];
 // const newNames = [];
 // names.forEach((s) => {
@@ -186,7 +186,7 @@
 // });
 // console.log(newWords);
 
-//Тоонуудын сөрөг утгыг console.log хийх [3,-2,5,-10] → -2, -10
+// Тоонуудын сөрөг утгыг console.log хийх [3,-2,5,-10] → -2, -10
 // const nums = [1, 2, 3, 4];
 // const newNums = [];
 // nums.forEach((s) => {
@@ -194,15 +194,15 @@
 // });
 // console.log(newNums);
 
-//“a” үсэг агуулсан үгсийг ялгаж хэвлэх ["bat","dorj","amar"] → bat, amar
-// const names = ["bat", "dorj", "amar"];
-// let includesA = [];
-// let count = 0;
-// names.forEach((a) => {
-//   if (a.includes("a") == true) {
-//     includesA.push(a.includes("a") && a);
-//   } else {
-//     return null;
-//   }
-// });
-// console.log(includesA);
+// “a” үсэг агуулсан үгсийг ялгаж хэвлэх ["bat","dorj","amar"] → bat, amar
+const names = ["bat", "dorj", "amar"];
+let includesA = [];
+let count = 0;
+names.forEach((a) => {
+  if (a.includes("a") == true) {
+    includesA.push(a.toLowerCase().includes("a") && a);
+  } else {
+    return null;
+  }
+});
+console.log(includesA);
